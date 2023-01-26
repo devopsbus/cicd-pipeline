@@ -1,1 +1,11 @@
-welcome to india 
+pipeline{
+    agent any
+    stages{
+        stage("Git Check"){
+        steps{
+           git branch: 'main', url: 'https://github.com/devopsbus/cicd-pipeline.git'
+            
+        }
+    }
+}
+}
